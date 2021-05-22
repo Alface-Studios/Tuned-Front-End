@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Polimnia",
+		"text": "Finalmente conheço-te [player_name]! Chamo-me Polimnia, a musa do canto, dos hinos e da retórica."
+	},
+	{
+		"name": "Polimnia",
+		"text": "Tens de completar os desafios das outras musas para desbloqueares este."
+	},
+	{
+		"name": "Polimnia",
+		"text": "Se não souberes quais os desafios que te faltam, fala com a Melpomene!"
+	},
+	{
+		"action": "end_talk"
+	}
+]

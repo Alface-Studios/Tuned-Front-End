@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Sileno",
+		"text": "Olá [player_name]! Ainda bem que te encontrei!"
+	},
+  {
+		"name": "Burro",
+		"text": "Ih, oh! Ih, oh..."
+	},
+  {
+		"action": "end"
+	}
+]
+
+

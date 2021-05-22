@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Polimnia",
+		"text": "[player_name] é melhor verificar novamente as roupas, se alguém estiver no lugar errado é uma desgraça."
+	},
+	{
+		"question": "Vamos a isto?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"action": "end_talk"
+	}
+]

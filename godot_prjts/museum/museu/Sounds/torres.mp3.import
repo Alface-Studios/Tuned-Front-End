@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/torres.mp3-002f57a629a74d2db3649c7f3b0a1e7a.mp3str"
+
+[deps]
+
+source_file="res://Sounds/torres.mp3"
+dest_files=[ "res://.import/torres.mp3-002f57a629a74d2db3649c7f3b0a1e7a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

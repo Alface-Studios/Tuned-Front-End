@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Melpomene",
+		"text": "Sileno aposto que ainda não está nada pronto para a festa de hoje!"
+	},
+	{
+		"name": "Melpomene",
+		"text": "Salutações [player_name]! Sou a Melpomene, a musa da tragédia."
+	},
+	{
+		"name": "Melpomene",
+		"text": "No Teatro Romano em Lisboa podes ver uma estátua minha, estás covidado!"
+	},
+	{
+		"name": "Melpomene",
+		"text": "Sempre que quiseres consultar os teus resultados vem falar comigo."
+	},
+	{
+		"action": "end_talk"
+	}
+]

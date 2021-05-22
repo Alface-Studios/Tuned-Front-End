@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fish.wav-d0696e4f2f7a6ca4bfcf89b2471ea28f.sample"
+
+[deps]
+
+source_file="res://Sounds/fish.wav"
+dest_files=[ "res://.import/fish.wav-d0696e4f2f7a6ca4bfcf89b2471ea28f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

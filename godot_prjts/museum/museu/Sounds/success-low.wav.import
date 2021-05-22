@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/success-low.wav-67b75506988ed89a97e27188cd78ebf4.sample"
+
+[deps]
+
+source_file="res://Sounds/success-low.wav"
+dest_files=[ "res://.import/success-low.wav-67b75506988ed89a97e27188cd78ebf4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

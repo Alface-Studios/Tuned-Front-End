@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/musa5.ogg-ef259e16b4cc161b583e821efab13382.oggstr"
+
+[deps]
+
+source_file="res://Sounds/musa5.ogg"
+dest_files=[ "res://.import/musa5.ogg-ef259e16b4cc161b583e821efab13382.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

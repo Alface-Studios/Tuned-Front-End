@@ -1,0 +1,441 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://addons/dialogs/Images/dialog-background.png" type="Texture" id=1]
+[ext_resource path="res://addons/dialogs/Images/next-indicator.png" type="Texture" id=2]
+[ext_resource path="res://addons/dialogs/dialog_node.gd" type="Script" id=3]
+[ext_resource path="res://addons/dialogs/Theme.tres" type="Theme" id=4]
+[ext_resource path="res://addons/dialogs/Images/portraits/sileno.png" type="Texture" id=5]
+[ext_resource path="res://addons/dialogs/Images/portraits/melpomene.png" type="Texture" id=6]
+[ext_resource path="res://addons/dialogs/Images/portraits/burro.png" type="Texture" id=7]
+[ext_resource path="res://addons/dialogs/Images/portraits/urânia.png" type="Texture" id=8]
+[ext_resource path="res://addons/dialogs/Images/portraits/euterpe.png" type="Texture" id=9]
+[ext_resource path="res://addons/dialogs/Images/dialog_bg.png" type="Texture" id=10]
+[ext_resource path="res://addons/dialogs/Images/portraits/polímnia.png" type="Texture" id=11]
+[ext_resource path="res://addons/dialogs/Images/portraits/caliope.png" type="Texture" id=12]
+[ext_resource path="res://addons/dialogs/Images/dialog_bg_2.png" type="Texture" id=13]
+
+[sub_resource type="Animation" id=1]
+resource_name = "anim"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:flip_h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Sileno",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "Caliope",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Euterpe",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "Polimnia",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Melpomene",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "Urania",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "Burro",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=3]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:margin_bottom")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 12.0, 55.0 ]
+}
+
+[sub_resource type="StyleBoxFlat" id=20]
+content_margin_left = 20.0
+content_margin_right = 20.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+content_margin_left = 25.0
+content_margin_right = 25.0
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+content_margin_left = 20.0
+content_margin_right = 20.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+content_margin_left = 20.0
+content_margin_right = 20.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="Theme" id=19]
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 10
+Button/fonts/font = null
+Button/styles/disabled = null
+Button/styles/focus = SubResource( 20 )
+Button/styles/hover = SubResource( 16 )
+Button/styles/normal = SubResource( 17 )
+Button/styles/pressed = SubResource( 18 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "anim"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:flip_h")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="StyleBoxFlat" id=6]
+content_margin_left = 15.0
+content_margin_right = 15.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+content_margin_left = 15.0
+content_margin_right = 15.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+expand_margin_left = 15.0
+expand_margin_right = 15.0
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id=9]
+content_margin_left = 15.0
+content_margin_right = 15.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+content_margin_left = 15.0
+content_margin_right = 15.0
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.345098, 0.223529, 0.223529, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.737255, 0.309804, 0.25098, 1 )
+expand_margin_top = 25.0
+
+[sub_resource type="Theme" id=11]
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 1, 1, 1, 0.2 )
+Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 10
+Button/fonts/font = null
+Button/styles/disabled = SubResource( 6 )
+Button/styles/focus = SubResource( 7 )
+Button/styles/hover = SubResource( 8 )
+Button/styles/normal = SubResource( 9 )
+Button/styles/pressed = SubResource( 15 )
+WindowDialog/colors/title_color = Color( 0.992157, 0.992157, 0.992157, 1 )
+WindowDialog/constants/close_h_ofs = 18
+WindowDialog/constants/close_v_ofs = 18
+WindowDialog/constants/scaleborder_size = 4
+WindowDialog/constants/title_height = 20
+WindowDialog/fonts/title_font = null
+WindowDialog/icons/close = null
+WindowDialog/icons/close_highlight = null
+WindowDialog/styles/panel = SubResource( 10 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 1, 1, 1, 1 )
+
+[node name="DialogNode" type="Control"]
+anchor_top = 0.007
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1019.19
+margin_top = -962.603
+margin_right = 1019.19
+margin_bottom = -955.043
+theme = ExtResource( 4 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="CloseUp" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.81
+margin_top = 3.04303
+margin_right = 4.81006
+margin_bottom = 3.04297
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CloseUp"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.80994
+margin_top = 3.04303
+margin_right = 4.80994
+margin_bottom = 3.04297
+color = Color( 0.0392157, 0.0392157, 0.0392157, 0.690196 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextBubble" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -419.19
+margin_top = -284.957
+margin_right = 490.81
+margin_bottom = -117.957
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="Sprite" parent="TextBubble"]
+position = Vector2( 455.287, 75.9789 )
+scale = Vector2( 0.756606, 0.596424 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextBubble/bg"]
+anims/anim = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="TextBubble"]
+position = Vector2( 78.5, 86.5001 )
+scale = Vector2( 1.87143, 1.87143 )
+z_index = 3000
+frames = SubResource( 2 )
+animation = "Caliope"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="TextBubble"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextBubble"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 160.0
+margin_top = 15.0
+margin_right = -15.0001
+margin_bottom = -15.0004
+bbcode_enabled = true
+bbcode_text = "Placeholder text for testing and formatting."
+text = "Placeholder text for testing and formatting."
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="TextBubble"]
+
+[node name="NextIndicator" type="TextureRect" parent="TextBubble"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -36.4279
+margin_top = -35.9016
+margin_right = 14.5721
+margin_bottom = 12.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+stretch_mode = 4
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextBubble/NextIndicator"]
+autoplay = "IDLE"
+anims/IDLE = SubResource( 3 )
+
+[node name="NameLabel" type="RichTextLabel" parent="TextBubble"]
+margin_left = 2.0
+margin_top = -50.0
+margin_right = 369.0
+margin_bottom = -13.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_as_outline = 10
+bbcode_enabled = true
+bbcode_text = "Name Here"
+text = "Name Here"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 45.0
+margin_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="Sprite" parent="Options"]
+position = Vector2( 44.0854, 53.7403 )
+scale = Vector2( 0.995949, 0.785096 )
+texture = ExtResource( 13 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Options/bg"]
+anims/anim = SubResource( 5 )
+
+[node name="TextInputDialog" type="AcceptDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.958
+anchor_right = 0.5
+anchor_bottom = 0.958
+margin_left = -195.19
+margin_top = 80.403
+margin_right = 190.81
+margin_bottom = 178.403
+theme = SubResource( 11 )
+popup_exclusive = true
+window_title = "Alert"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="TextInputDialog"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 378.0
+margin_bottom = 45.0
+custom_styles/read_only = SubResource( 12 )
+custom_styles/focus = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+caret_blink_speed = 0.4
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FX" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FadeInNode" type="ColorRect" parent="FX"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="FX/FadeInNode"]
+
+[connection signal="tween_completed" from="TextBubble/Tween" to="." method="_on_Tween_tween_completed"]

@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Caliope",
+		"text": "Chamo-me Caliope, sou a musa da eloquência e da poesia épica"
+	},
+	{
+		"question": "Queres participar neste desafio?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"name": "Caliope",
+		"text": "[player_name] ajuda o Sileno a encontrar os pares entre os [color=#cb2030]objetos antigos romanos[/color] e os [color=#65aa81]atuais que tu deves conhecer bem.[/color]"
+	},
+	{
+		"action": "go_to_Cards"
+	}
+]

@@ -1,0 +1,172 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/CardsGame.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Fonts/Font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Assets/Sprites/ui/return.png" type="Texture" id=3]
+[ext_resource path="res://Sounds/success-low.wav" type="AudioStream" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=2]
+Panel/styles/panel = SubResource( 1 )
+
+[node name="CardsGame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.74902, 0.815686, 0.858824, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="grid" type="GridContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 40.0
+margin_right = -40.0
+margin_bottom = -240.0
+columns = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color( 0.894118, 0.737255, 0.380392, 1 )
+margin_left = 40.0
+margin_top = 873.0
+margin_right = 1880.0
+margin_bottom = 1001.0
+theme = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sections" type="HBoxContainer" parent="Panel"]
+light_mask = -2147483647
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SectionScore" type="VBoxContainer" parent="Panel/Sections"]
+margin_right = 582.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Panel/Sections/SectionScore"]
+margin_right = 582.0
+margin_bottom = 62.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Pontos"
+align = 1
+valign = 1
+
+[node name="score" type="Label" parent="Panel/Sections/SectionScore"]
+margin_top = 66.0
+margin_right = 582.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "##"
+align = 1
+valign = 1
+
+[node name="SectionTimer" type="VBoxContainer" parent="Panel/Sections"]
+margin_left = 586.0
+margin_right = 1168.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Panel/Sections/SectionTimer"]
+margin_right = 582.0
+margin_bottom = 62.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SEGUNDOS"
+align = 1
+valign = 1
+
+[node name="seconds" type="Label" parent="Panel/Sections/SectionTimer"]
+margin_top = 66.0
+margin_right = 582.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "##"
+align = 1
+valign = 1
+
+[node name="SectionMoves" type="VBoxContainer" parent="Panel/Sections"]
+margin_left = 1172.0
+margin_right = 1754.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Panel/Sections/SectionMoves"]
+margin_right = 582.0
+margin_bottom = 62.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PARES VIRADOS"
+align = 1
+valign = 1
+
+[node name="moves" type="Label" parent="Panel/Sections/SectionMoves"]
+margin_top = 66.0
+margin_right = 582.0
+margin_bottom = 128.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "##"
+align = 1
+valign = 1
+
+[node name="SectionButtons" type="VBoxContainer" parent="Panel/Sections"]
+margin_left = 1758.0
+margin_top = 23.0
+margin_right = 1840.0
+margin_bottom = 105.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TextureButton" type="TextureButton" parent="Panel/Sections/SectionButtons"]
+margin_right = 82.0
+margin_bottom = 82.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 3 )
+
+[node name="successSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[connection signal="pressed" from="Panel/Sections/SectionButtons/TextureButton" to="." method="_on_TextureButton_pressed"]

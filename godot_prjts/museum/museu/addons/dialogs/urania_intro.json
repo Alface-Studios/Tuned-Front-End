@@ -1,0 +1,25 @@
+[
+	{
+		"name": "Urania",
+		"text": "Olá [player_name]! Eu sou a Urania, a musa da astronomia."
+	},
+	{
+		"question": "Conto contigo para este desafio?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"name": "Urania",
+		"text": "Ajuda o Sileno a contruir todas as colunas. Só tens de carregar no momento certo para o bloco cair."
+	},
+	{
+		"name": "Urania",
+		"text": "No quarto nível desafio-te a empilhar o máximo de blocos que conseguires"
+	},
+
+	{
+		"action": "go_to_Towers"
+	}
+]

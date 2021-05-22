@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Euterpe",
+		"text": "Muito prazer [player_name]. Sou Euterpe, a musa da música e poesia lírica"
+	},
+	{
+		"question": "Queres ajudar o Sileno a reconstruir a fachada cénica antes que a festa comece?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"name": "Euterpe",
+		"text": "Carrega sobre o elemento que quiseres usar e arrasta o novo elemento para o seu respetivo local"
+	},
+
+	{
+		"action": "go_to_Fachada"
+	}
+]

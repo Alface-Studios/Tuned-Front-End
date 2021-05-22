@@ -1,0 +1,13 @@
+[
+	{
+		"name": "Caliope",
+		"question": "Queres melhorar o teu recorde de [cards_time] segundos?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"action": "go_to_Cards"
+	}
+]

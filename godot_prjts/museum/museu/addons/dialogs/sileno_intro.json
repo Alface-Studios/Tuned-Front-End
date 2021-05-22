@@ -1,0 +1,35 @@
+[
+	{
+		"name": "Sileno",
+		"text": "Olá! Sê bem-vindo ao Teatro Romano de Lisboa."
+	},
+	{
+		"name": "Sileno",
+		"text": "Chegou o dia da grande festa de Baco. Os deuses, como costume fizeram uma grande confusão no teatro."
+	},
+	{
+		"name": "Sileno",
+		"text": "Felizmente chegaste mesmo a tempo para me ajudar a preparar tudo para a ocasião."
+	},
+	{
+		"name": "Sileno",
+		"input": "Já agora como te chamas?",
+		"window_title": "Escreve aqui o teu nome",
+		"variable": "player_name"
+	},
+	{
+		"name": "Sileno",
+		"text": "[player_name] preciso da tua ajuda em quatro tarefas."
+	},
+  {
+		"name": "Sileno",
+		"text": "Fala com cada uma das musas para realizarmos as tarefas que ainda faltam!"
+	},
+  {
+		"name": "Burro",
+		"text": "Ih, oh! Ih, oh..."
+	},
+  {
+		"action": "end"
+	}
+]

@@ -1,0 +1,9 @@
+[
+	{
+		"name": "Euterpe",
+		"text": "Obrigada [player_name], volta sempre que quiseres. Finalmente a fachada cénica está completa!"
+	},
+	{
+		"action": "end_game_fachada"
+	}
+]

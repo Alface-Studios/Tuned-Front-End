@@ -1,0 +1,9 @@
+[
+	{
+		"name": "Melpomene",
+		"text": "Mostrar scores!"
+	},
+	{
+		"action": "end_talk"
+	}
+]

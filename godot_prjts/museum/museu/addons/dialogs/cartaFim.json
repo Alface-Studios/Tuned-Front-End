@@ -1,0 +1,9 @@
+[
+	{
+		"name": "Caliope",
+		"text": "Boa [player_name], conseguiste ajudar o Sileno a encontrar todos os pares!"
+	},
+	{
+		"action": "end_game_card"
+	}
+]

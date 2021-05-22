@@ -1,0 +1,100 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/Bancada.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/DockableAnimSprite.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Sprites/bancada/cenário_sit-down-people.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Sprites/ui/reuturn_round.png" type="Texture" id=5]
+[ext_resource path="res://Sounds/success-low.wav" type="AudioStream" id=6]
+
+[node name="Bancada" type="Node2D" groups=[
+"fachada",
+]]
+script = ExtResource( 1 )
+
+[node name="Status" type="RichTextLabel" parent="."]
+margin_left = 714.365
+margin_top = 13.9819
+margin_right = 1438.36
+margin_bottom = 29.9819
+text = "dummy"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpriteList" type="RichTextLabel" parent="."]
+margin_left = 714.365
+margin_top = 33.7441
+margin_right = 1438.36
+margin_bottom = 53.7441
+text = "dummy"
+
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 960, 542 )
+texture = ExtResource( 4 )
+
+[node name="Dockables" type="Node2D" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.545098 )
+
+[node name="Dockable" parent="Dockables" groups=[
+"docks",
+] instance=ExtResource( 3 )]
+position = Vector2( 1021.44, 950.425 )
+scale = Vector2( 1, 1 )
+
+[node name="Dockable2" parent="Dockables" groups=[
+"docks",
+] instance=ExtResource( 3 )]
+position = Vector2( 952.944, 587.568 )
+scale = Vector2( 1, 1 )
+animation = "cidadao"
+
+[node name="Dockable3" parent="Dockables" groups=[
+"docks",
+] instance=ExtResource( 3 )]
+position = Vector2( 1638.27, 310.029 )
+scale = Vector2( 1, 1 )
+animation = "escravo"
+
+[node name="Dockable4" parent="Dockables" groups=[
+"docks",
+] instance=ExtResource( 3 )]
+position = Vector2( 658.567, 823.683 )
+scale = Vector2( 1, 1 )
+animation = "sacerdote"
+
+[node name="Dockable5" parent="Dockables" groups=[
+"docks",
+] instance=ExtResource( 3 )]
+position = Vector2( 953.517, 914.289 )
+scale = Vector2( 1, 1 )
+animation = "patricio"
+
+[node name="Dockable6" parent="Dockables" groups=[
+"docks",
+] instance=ExtResource( 3 )]
+position = Vector2( 369.916, 787.492 )
+scale = Vector2( 1, 1 )
+animation = "soldado"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 1763.42
+margin_top = 924.5
+margin_right = 1867.42
+margin_bottom = 1028.5
+texture_normal = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="successSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+
+[connection signal="dock" from="Dockables/Dockable" to="." method="_on_Dockable_dock"]
+[connection signal="dock" from="Dockables/Dockable2" to="." method="_on_Dockable_dock"]
+[connection signal="dock" from="Dockables/Dockable3" to="." method="_on_Dockable_dock"]
+[connection signal="dock" from="Dockables/Dockable4" to="." method="_on_Dockable_dock"]
+[connection signal="dock" from="Dockables/Dockable5" to="." method="_on_Dockable_dock"]
+[connection signal="dock" from="Dockables/Dockable6" to="." method="_on_Dockable_dock"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

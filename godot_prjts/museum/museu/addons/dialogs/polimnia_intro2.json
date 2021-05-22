@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Polimnia",
+		"text": "Finalmente conheço-te [player_name], ajudante de Sileno! Chamo-me Polimnia, a musa do canto, dos hinos e da retórica."
+	},
+	{
+		"name": "Polimnia",
+		"text": "Já sei que completaste os desafios todos com sucesso. Uma proeza de um verdadeiro herói!"
+	},
+	{
+		"name": "Polimnia",
+		"text": "Desta vez terás que vestir os convidados com as vestes correctas."
+	},
+	{
+		"name": "Polimnia",
+		"text": "Se tiveres alguma dúvida carrega sobre o convidado e eu darei-te umas dicas."
+	},
+	{
+		"name": "Polimnia",
+		"text": "O Sileno não distingue uma toga de uma stola, tens de o ajudar [player_name]!"
+	},	
+	{
+		"question": "Vamos a isto?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"action": "end_talk"
+	}
+]

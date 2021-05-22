@@ -1,0 +1,12 @@
+[
+	{
+		"question": "Olá novamente [player_name]! Será que consegues fazer mais que [towers_score] pontos?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"action": "go_to_Towers"
+	}
+]

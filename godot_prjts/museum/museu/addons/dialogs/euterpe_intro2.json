@@ -1,0 +1,12 @@
+[
+	{
+		"question": "Queres ajudar o Sileno a reconstruir a fachada cénica?",
+		"options": [
+			{ "label": "Não", "value": "0"},
+			{ "label": "Sim", "value": "1"}
+		]
+	},
+	{
+		"action": "go_to_Fachada"
+	}
+]

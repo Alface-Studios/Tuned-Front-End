@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/donkey.ogg-dbac84549db497faca392e30f1f34e3a.oggstr"
+
+[deps]
+
+source_file="res://Sounds/donkey.ogg"
+dest_files=[ "res://.import/donkey.ogg-dbac84549db497faca392e30f1f34e3a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
